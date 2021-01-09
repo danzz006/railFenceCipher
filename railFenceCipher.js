@@ -111,9 +111,15 @@ const railFenceCipher = function(word, depth){
     
 }
 
+
+// initializing with plain text and depth
 var rfc = new railFenceCipher('hello computing in java', 8);
+// to get the cipher text
 let rfcEncoded = rfc.Encoded();
-console.log(rfcEncoded);
+// console.log(rfcEncoded);
+
+// provides a visual
 rfc.Matrix();
+// to decode some cioher text. Note that depth must be initialized before decoding
 let rfcDecoded = rfc.DecodedExternal('hgen liiltnou  pjcmaaov');
-console.log(rfcDecoded);
+// console.log(rfcDecoded);
